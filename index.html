@@ -3,17 +3,51 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Todo - List</title>
+    <title>Weater - App Clean Architecture</title>
 
-    <meta name="description" content="A simple Todo-App built with HTML5, CSS3 (SASS) and TS (ES6+)">
+    <meta name="description" content="A simple Weather App following Clean Architecture Principles">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
+    <link rel="stylesheet" href="./style.css">
     <script src="./src/infrastructure/web/index.ts" defer></script>
 </head>
 
 <body>
-    <div id="root">This is a test</div>
+    <section class="top-banner">
+        <div class="container">
+            <h1 class="heading">Simple Weather App</h1>
+            <form>
+                <input type="text" placeholder="Search for a city" autofocus>
+                <button type="submit">SUBMIT</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+    <section class="ajax-section">
+        <div class="container">
+            <ul class="cities">
+                <li class="city">
+                    <h2 class="city-name">
+                        <span>Berlin</span>
+                        <sup>DE</sup>
+                    </h2>
+                    <div class="city-temp">11<sup>°C</sup></div>
+                    <figure>
+                        <img class="city-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/01n.svg"
+                            alt="Weather Image">
+                        <figcaption>Clear Sky</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <footer class="page-footer">
+        <div class="container">
+            <small>Made with <span>❤</span> by <a href="http://georgemartsoukos.com/" target="_blank">George
+                    Martsoukos</a>
+            </small>
+        </div>
+    </footer>
 </body>
 
 </html>

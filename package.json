@@ -1,0 +1,32 @@
+{
+  "name": "weather-app-experiment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "build": "parcel build index.html --out-dir build/ --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrislicodes/weather-app-experiment.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chrislicodes/weather-app-experiment/issues"
+  },
+  "homepage": "https://github.com/chrislicodes/weather-app-experiment#readme",
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.4",
+    "@types/jest": "^26.0.23",
+    "babel-jest": "^27.0.2",
+    "cssnano": "^5.0.5",
+    "jest": "^27.0.2",
+    "postcss": "^8.3.0",
+    "sass": "^1.34.1",
+    "typescript": "^4.3.2"
+  }
+}
